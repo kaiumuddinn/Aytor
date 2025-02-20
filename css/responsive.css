@@ -1,0 +1,99 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  #newProduct h2 {
+    font-size: 26px;
+    margin-bottom: 0px;
+    padding: 50px 0 10px 0;
+  }
+  #bestSellingProduct h3 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  #promo .promoVideo .overlay {
+    top: 84%;
+    left: 52%;
+  }
+  footer .subscribe button {
+    padding: 0 10px;
+  }
+  #productDetails {
+    padding: 40px 0;
+}
+  #productDetails .productDescription .addToCartBtn{
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  #product {
+    padding: 0;
+    margin-top: 50px;
+  }
+  #preFooter .socialMedia {
+    padding-top: 70px;
+  }
+  #preFooter .socialMedia .center {
+    padding: 30px 0;
+  }
+  footer .accounts h4,
+  footer .opening h4,
+  footer .contact h4,
+  footer .form h4 {
+    margin-top: 30px;
+  }
+  #aboutAytorShop .contains .details h3 {
+    margin-top: 20px;
+  }
+  #aboutAytorShop .numbers .cards {
+    margin: 15px 0;
+  }
+  .ourStory .ourStoryCard {
+    border: none;
+  }
+  .ourStory .ourStoryCard h4 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  #customer .customerSlider .slide {
+    padding: 0 40px 60px 40px;
+  }
+  .customerSlider .slide h4 {
+    font-size: 20px;
+  }
+  .customerSlider .slide p {
+    font-size: 10px;
+  }
+  .customerSlider .slide span {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #newProduct h2 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    padding: 50px 0 10px 0;
+  }
+  #bestSellingProduct h3 {
+    margin-top: 50px;
+    font-size: 32px;
+  }
+  .product .productDetails h4 {
+    font-size: 17px;
+  }
+  #promo .promoVideo .overlay {
+    top: 78%;
+  }
+}
+@media (min-width: 400px) and (max-width: 991px) {
+  #dealsOfTheDay .slide .contains {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 5000px) {
+  #promo .promoVideo {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+  }
+}
