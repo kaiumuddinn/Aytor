@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aytor</title>
+    <!-- *CSS -->
+    <!-- *FAVICON -->
+    <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
+
+    <!-- *FONT AWESOME -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- *BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- *SLICK -->
+    <link rel="stylesheet" href="./css/slick.css" />
+
+    <!-- *MAIN -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- *RESPONSIVE -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- *CSS END -->
+  </head>
+  <body>
+    <!-- *NAVBAR -->
+    <header>
+      <!-- *DESKTOP NAVBAR -->
+      <nav class="navbar navbar-expand-lg d-none d-lg-block">
+        <div class="container">
+          <!-- *LOGO -->
+          <a class="navbar-brand" href="#">
+            <img src="./Images/Logo.png" alt="" />
+          </a>
+          <!-- *LOGO END -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse desktopMenu"
+            id="navbarSupportedContent"
+          >
+            <!-- *DESKTOP MENU -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Shop <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./shop grid.html">Shop - Grid</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./shop details.html">Shop - Details Style One</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Pages <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./about.html">About Us</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./compare.html">Compare</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./wishlist.html">Wishlist</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Features</a>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Blogs <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./blog with classic sidebar.html">Blog - Classic With Sidebar</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./blog details.html">Blog - Details</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- *DESKTOP MENU END -->
+          </div>
+
+          <!-- *ICONS -->
+          <div class="icons">
+            <ul class="d-flex">
+              <li>
+                <a href="#" class="searchIcon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="./wishlist.html"
+                  ><i class="fa-solid fa-bag-shopping"></i>
+                  <span class="cartCounter">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- *ICONS END -->
+        </div>
+      </nav>
+
+      <!-- *SEARCH -->
+      <section id="search">
+        <div class="container d-flex align-items-center justify-content-center">
+          <form action="" class="d-flex">
+            <input type="text" placeholder="Search Here" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="cross d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </section>
+      <!-- *SEARCH END -->
+
+      <!-- *DESKTOP NAVBAR END-->
+
+      <!-- *SMALL NAVBAR -->
+      <nav id="navbar_sm" class="d-block d-lg-none">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-2 text-center">
+              <button
+                class="menuTogglerBtn"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#smallMenu"
+              >
+                <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+            </div>
+
+            <div class="col-7 text-center">
+              <a href="#"><img src="./Images/Logo.png" height="50" alt="" /></a>
+            </div>
+
+            <div class="col-3">
+              <div class="icons">
+                <ul class="d-flex justify-content-end">
+                  <li>
+                    <a class="search_icon_sm" href="#"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-bag-shopping"></i>
+                      <span class="cartCounter">0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *OFFCANVAS MENU -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="smallMenu"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <a href="#"><img src="./Images/Logo.png" height="30" alt="" /></a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <ul class="smallMenuLinks">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- *OFFCANVAS MENU END -->
+      </nav>
+      <!-- *SMALL NAVBAR END -->
+    </header>
+    <!-- *NAVBAR END -->
+
+    <main>
+      <!-- *ABOUT BANNER START -->
+      <section id="aboutBanner">
+        <div class="container">
+          <h2>Blog - Details</h2>
+          <p>
+            <a href="./index.html">Home </a> /
+            <a href="./about.html"> Blog</a>
+          </p>
+        </div>
+      </section>
+      <!-- *ABOUT BANNER END -->
+
+      <!-- *BLOG DETAILS -->
+      <section id="blogContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 order-2 order-lg-1">
+                    <div id="blogDetails">
+
+                        <div class="content">
+
+                            <div class="blogDetailsSlider">
+                                <div class="slide"><img class="d-block w-100" src="./Images/Blog Images/Blog Details Images/1.png" alt=""></div>
+                                <div class="slide"><img class="d-block w-100" src="./Images/Blog Images/Blog Details Images/1.png" alt=""></div>
+                                <div class="slide"><img class="d-block w-100" src="./Images/Blog Images/Blog Details Images/1.png" alt=""></div>
+                            </div>
+
+                            <div class="row postMeta">
+                                <div class="col-lg-6">
+                                    <h5>Michel-Fashion Admin &nbsp; | &nbsp; <span><i class="fa-solid fa-calendar-days"></i></span> January 04, 2022</h5>
+                                </div>
+                                <div class="col-lg-6 text-end">
+                                    <h5><span><i class="fa-solid fa-heart"></i></span> like(2.2k) &nbsp;| &nbsp; <span><i class="fa-solid fa-comment-dots"></i></span> Comment(03) &nbsp; | &nbsp; <span><i class="fa-solid fa-share-from-square"></i></span> Share</h5>
+                                </div>
+                            </div>
+
+                            <h3>Color, Size, Material Swatches</h3>
+                            <p>Compellingly extend client-based catalysts for change with adaptive information. Appropriately repurpose inexpensive networks vis-a-vis turnkey customer service. Distinctively drive viral catalysts for change whereas high-payoff supply chains. Progressively myocardinate highly efficient meta-services via cutting-edge core competencies. Dynamically target mission-critical expertise. Professionally enable resource sucking information rather than sustainable infrastructures. Competently empower market-driven communities through interoperable systems. Proactively exploit quality resources rather than real-time "outside the box" thinking.</p>
+
+                            <div class="different"><p>Professionally implement installed base initiatives vis-a-vis low-risk high-yield leadership. Enthusiastically synthesize magnetic functionalities vis-a-vis low-risk high-yield ideas. Quickly architect.</p></div>
+
+                            <p>Authoritatively innovate resource maximizing quality vectors vis-a-vis performance based interfaces. Uniquely productivate intermandated web services before fully researched users. Quickly productivate open-source sources through bleeding-edge growth strategies. Authoritatively grow unique solutions and high-quality e-commerce.</p>
+
+                            <div class="row my-4">
+                                <div class="col-lg-6"><img class="d-block w-100" src="./Images/Blog Images/Blog Details Images/2.png" alt=""></div>
+                                <div class="col-lg-6"><img class="d-block w-100" src="./Images/Blog Images/Blog Details Images/2.png" alt=""></div>
+                            </div>
+                            <p>Authoritatively revolutionize cutting-edge alignments for transparent synergy. Proactively integrate wireless convergence rather than backend data. Interactively harness team driven materials for prospective growth strategies. Dramatically reconceptualize distributed manufactured products through enabled ROI. Distinctively target scalable architectures before dynamic results. Appropriately revolutionize end-to-end resources after an expanded array of total linkage. Phosfluorescently predominate.</p>
+
+
+                            <div class="socials">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-2 text-end"><h5>Tags:</h5></div>
+                                            <div class="col-10"><span>Accessories</span> <span>Fashion</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mt-3 mt-md-0 text-lg-end">
+                                        <div class="row">
+                                            <div class="col-3 col-lg-7"><h5>Share:</h5></div>
+                                            <div class="col-9 col-lg-5">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="comments">
+                            <div class="authorComment">
+                                <div class="row align-items-center">
+                                    <div class="col-2 text-center"><img class="d-block w-100" src="./Images/Blog Images/Blog Details Images/Author comment.png" alt=""></div>
+                                    <div class="col-10">
+                                        <h4>AetorStudio</h4>
+                                        <label>Author</label>
+                                        <span class="socialIcons d-none d-md-block">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                                        </span>
+                                        <p>Synergistically synergize cross-media mindshare via extensible infomediaries. Professionally unleash mission -critical e-tailers with virtual e-tailers.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>Comment (03)</h3>
+
+                            <div class="audienceComment">
+                                <div class="row m-0">
+                                    <div class="col-2 d-flex align-items-center justify-content-end"><img class="d-block" src="./Images/Blog Images/Blog Details Images/audience comment 1.png" alt=""></div>
+                                    <div class="col-10">
+                                        <h4>AetorStudio</h4>
+                                        <div class="row mb-2">
+                                            <div class="col-6"><p class="date">January 04, 2022  08:56pm</p></div>
+                                            <div class="col-6 text-end"><h6><span><i class="fa-solid fa-share"></i></span> Reply</h6></div>
+                                        </div>
+                                        <p>Assertively maintain value-added e-commerce and progressive bandwidth. Credibly myocardinate just in time best practic- es after proactive innovation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="audienceComment middle">
+                                <div class="row m-0">
+                                    <div class="col-2"><img class="d-block" src="./Images/Blog Images/Blog Details Images/audience comment 2.png" alt=""></div>
+                                    <div class="col-10">
+                                        <h4>RoyStudio</h4>
+                                        <div class="row mb-2">
+                                            <div class="col-6"><p class="date">January 04, 2022  08:56pm</p></div>
+                                            <div class="col-6 text-end"><h6><span><i class="fa-solid fa-share"></i></span> Reply</h6></div>
+                                        </div>
+                                        <p>Competently cultivate virtual web-readiness vis-a-vis sticky customer service. Completely embrace backward-compatible services through magnetic content. Uniquely unleash.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="audienceComment">
+                                <div class="row m-0">
+                                    <div class="col-2"><img class="d-block" src="./Images/Blog Images/Blog Details Images/audience comment 1.png" alt=""></div>
+                                    <div class="col-10">
+                                        <h4>AetorStudio</h4>
+                                        <div class="row mb-2">
+                                            <div class="col-6"><p class="date">January 04, 2022  08:56pm</p></div>
+                                            <div class="col-6 text-end"><h6><span><i class="fa-solid fa-share"></i></span> Reply</h6></div>
+                                        </div>
+                                        <p>Objectively build prospective materials vis-a-vis cost effective total linkage. Collaboratively aggregate covalent system  for synergistic resources. Holisticly build professional metrics through e-business catalysts for.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form">
+                            <h3>Leave a Reply</h3>
+                            <p>Your email address will not be published. Required fields are marked *</p>
+                            <form>
+                                <div class="row gy-4">
+                                    <div class="col-lg-6"><input type="text" placeholder="Name*"></div>
+                                    <div class="col-lg-6"><input type="text" placeholder="Email Address*"></div>
+                                    <div class="col-12"><input type="text" placeholder="Website*"></div>
+                                    <div class="col-12"><textarea>Comment*</textarea></div>
+                                </div>
+                                <a class="postBtn" href="#">Post Comments</a>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-3 order-1 order-lg-2">
+
+                    <div class="search d-flex">
+                        <input class="col-10" type="search" placeholder="Search Here....">
+                        <button class="col-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="categories py-5">
+                        <h4>Categories</h4>
+                        <div class="row categoryItem">
+                            <div class="col-10">Fashion</div>
+                            <div class="col-2 text-end">(5)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Furnitures</div>
+                            <div class="col-2 text-end">(2)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Electronics</div>
+                            <div class="col-2 text-end">(3)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Cosmetics</div>
+                            <div class="col-2 text-end">(6)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Wine</div>
+                            <div class="col-2 text-end">(2)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Frame Sunglasses</div>
+                            <div class="col-2 text-end">(2)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Jewellery</div>
+                            <div class="col-2 text-end">(4)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Accessories</div>
+                            <div class="col-2 text-end">(3)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">New Arrivals</div>
+                            <div class="col-2 text-end">(7)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Medicine</div>
+                            <div class="col-2 text-end">(5)</div>
+                        </div>
+                    </div>
+
+                    <div class="recentPost">
+                        <h4>Recent Posts</h4>
+
+                        <div class="row Posts">
+                            <div class="col-4">
+                                <img class="d-block w-100" src="./Images/Blog Images/Recent Post.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5>Fashion Women New Key Trends</h5>
+                                <p>January 04, 2022</p>
+                            </div>
+                        </div>
+                        <div class="row Posts">
+                            <div class="col-4">
+                                <img class="d-block w-100" src="./Images/Blog Images/Recent Post.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5>Fashion Women New Key Trends</h5>
+                                <p>January 04, 2022</p>
+                            </div>
+                        </div>
+                        <div class="row Posts">
+                            <div class="col-4">
+                                <img class="d-block w-100" src="./Images/Blog Images/Recent Post.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5>Fashion Women New Key Trends</h5>
+                                <p>January 04, 2022</p>
+                            </div>
+                        </div>
+                        <div class="row Posts">
+                            <div class="col-4">
+                                <img class="d-block w-100" src="./Images/Blog Images/Recent Post.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5>Fashion Women New Key Trends</h5>
+                                <p>January 04, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tags py-5">
+                        <h4>Tags</h4>
+                        <div class="row g-2 py-4">
+                            <div class="col mx-1 tag"><p>Accessories</p></div>
+                            <div class="col mx-1 tag"><p>Fashion</p></div>
+                            <div class="col mx-1 tag"><p>Sports</p></div>
+                            <div class="col mx-1 tag"><p>Food</p></div>
+                            <div class="col mx-1 tag"><p>Furnitures</p></div>
+                            <div class="col mx-1 tag"><p>Jewellery</p></div>
+                            <div class="col mx-1 tag"><p>Mobile</p></div>
+                            <div class="col mx-1 tag"><p>Toyes</p></div>
+                            <div class="col mx-1 tag"><p>Technology</p></div>
+                            <div class="col mx-1 tag"><p>Tips</p></div>
+                        </div>
+                    </div>
+
+                    <div class="sale pb-5">
+                        <img class="d-block w-100" src="./Images/Blog Images/Sale.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- *BLOG DETAILS END -->
+
+      
+    </main>
+
+    <!-- *FOOTER START -->
+    <footer>
+      <div class="container">
+
+        <div class="subscribe">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Subscribe to Our Newsletter!</h3>
+              <p class="col-lg-8">Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
+            </div>
+            <div class="col-lg-6 py-4">
+              <form class="d-flex">
+                <input class="col-8" type="text" placeholder="Enter your email....">
+                <button class="col-4" >Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="socialLinks">
+              <img src="./Images/Footer Logo.png" alt="" />
+              <p>
+                Progressively optimize effective ideas before turnkey process
+                improvements. Proactively disseminate
+              </p>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="accounts">
+              <h4>My Account</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span> My
+                    Account</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    View Cart</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Wishlist</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Compare</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span> New
+                    Products</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="accounts">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Help</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    View Cart</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Customer Service</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Store Locations</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="opening">
+              <h4>Opening Time</h4>
+              <div class="row">
+                <div class="col-6">
+                  <p><span>Mon-Tue:</span></p>
+                  <p><span>Wed:</span></p>
+                  <p><span>Fri:</span></p>
+                  <p><span>Sat:</span></p>
+                  <p><span>Sun:</span></p>
+                </div>
+                <div class="col-6">
+                  <p class="time">8AM - 10PM</p>
+                  <p class="time">8AM - 7PM</p>
+                  <p class="time">7AM - 12PM</p>
+                  <p class="time">9AM - 8PM</p>
+                  <p class="time">Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="contact">
+              <h4>Contact Us</h4>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"
+                    ><i class="fa-solid fa-location-dot"></i
+                  ></span>
+                </div>
+                <div class="col-11">
+                  <address class="text">
+                    830 Broad way, New York, NY 10003, United States
+                  </address>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="tel:+18008660286">+18008660286</a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="mailto:aetor.info@gmail.com"
+                    >aetor.info@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-globe"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="#">info@aetor.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="last">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+              <p class="flast">
+                © 2022 All Rights Reserved <span>Aytor</span> By
+                <span>Angfuzsoft.</span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="./Images/Paying method.png" alt="" />
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- *FOOTER END -->
+
+    <!-- *JS -->
+    <!-- *JQUERY-->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- *SLICK -->
+    <script src="./js/slick.min.js"></script>
+
+    <!-- *FINAL COUNTDOWN JS -->
+    <script src="./js/jquery.countdown.min.js"></script>
+
+    <!-- *BOOTSTRAP-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- *MAIN-->
+    <script src="./js/app.js"></script>
+    <!-- *JS END -->
+  </body>
+</html>

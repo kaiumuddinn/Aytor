@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aytor</title>
+    <!-- *CSS -->
+    <!-- *FAVICON -->
+    <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
+
+    <!-- *FONT AWESOME -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- *BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- *SLICK -->
+    <link rel="stylesheet" href="./css/slick.css" />
+
+    <!-- *MAIN -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- *RESPONSIVE -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- *CSS END -->
+  </head>
+  <body>
+    <!-- *NAVBAR -->
+    <header>
+      <!-- *DESKTOP NAVBAR -->
+      <nav class="navbar navbar-expand-lg d-none d-lg-block">
+        <div class="container">
+          <!-- *LOGO -->
+          <a class="navbar-brand" href="#">
+            <img src="./Images/Logo.png" alt="" />
+          </a>
+          <!-- *LOGO END -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse desktopMenu"
+            id="navbarSupportedContent"
+          >
+            <!-- *DESKTOP MENU -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Shop <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./shop grid.html">Shop - Grid</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./shop details.html">Shop - Details Style One</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Pages <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./about.html">About Us</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./compare.html">Compare</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./wishlist.html">Wishlist</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Features</a>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Blogs <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./blog with classic sidebar.html">Blog - Classic With Sidebar</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./blog details.html">Blog - Details</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- *DESKTOP MENU END -->
+          </div>
+
+          <!-- *ICONS -->
+          <div class="icons">
+            <ul class="d-flex">
+              <li>
+                <a href="#" class="searchIcon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="./wishlist.html"
+                  ><i class="fa-solid fa-bag-shopping"></i>
+                  <span class="cartCounter">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- *ICONS END -->
+        </div>
+      </nav>
+
+      <!-- *SEARCH -->
+      <section id="search">
+        <div class="container d-flex align-items-center justify-content-center">
+          <form action="" class="d-flex">
+            <input type="text" placeholder="Search Here" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="cross d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </section>
+      <!-- *SEARCH END -->
+
+      <!-- *DESKTOP NAVBAR END-->
+
+      <!-- *SMALL NAVBAR -->
+      <nav id="navbar_sm" class="d-block d-lg-none">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-2 text-center">
+              <button
+                class="menuTogglerBtn"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#smallMenu"
+              >
+                <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+            </div>
+
+            <div class="col-7 text-center">
+              <a href="#"><img src="./Images/Logo.png" height="50" alt="" /></a>
+            </div>
+
+            <div class="col-3">
+              <div class="icons">
+                <ul class="d-flex justify-content-end">
+                  <li>
+                    <a class="search_icon_sm" href="#"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-bag-shopping"></i>
+                      <span class="cartCounter">0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *OFFCANVAS MENU -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="smallMenu"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <a href="#"><img src="./Images/Logo.png" height="30" alt="" /></a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <ul class="smallMenuLinks">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- *OFFCANVAS MENU END -->
+      </nav>
+      <!-- *SMALL NAVBAR END -->
+    </header>
+    <!-- *NAVBAR END -->
+
+    <main>
+      <!-- *ABOUT BANNER START -->
+      <section id="aboutBanner">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            <a href="./index.html">Home</a> /
+            <a href="./about.html">About Us</a>
+          </p>
+        </div>
+      </section>
+      <!-- *ABOUT BANNER END -->
+
+      <!-- *LEARN ABOUT AYTOR SHOP -->
+      <section id="aboutAytorShop">
+        <div class="container">
+          <div class="row align-items-center contains">
+            <div class="col-lg-6">
+              <img
+                class="d-block w-100"
+                src="./Images/About Aytor Shop Left side Image.png"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <div class="details">
+                <h3>Learn About Aytor Shop</h3>
+                <p>
+                  Interactively underwhelm effective relationships whereas team
+                  driven paradigms. Uniquely impact impactful meta-services vis
+                  -a-vis fully tested best practices. Appropriately e-enable
+                  fully.
+                </p>
+                <div class="options">
+                  <p>
+                    <span><i class="fa-solid fa-check"></i> </span> Assertively
+                    customize robust potentialities and economical
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i> </span> Seamlessly
+                    disintermediate distributed intellectual capital.
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i> </span> Credibly
+                    enable B2C potentialities after strategic.
+                  </p>
+                </div>
+                <a href="#"
+                  >Discover More &nbsp;<span
+                    ><i class="fa-solid fa-arrow-right-long"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="numbers">
+            <div class="row">
+              <div class="col-6 col-lg-3">
+                <div class="cards text-center">
+                  <div class="image">
+                    <img
+                      src="./Images/About aytor shop card images/1.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>22.3k</h4>
+                  <p>Products for sale</p>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                <div class="cards text-center">
+                  <div class="image">
+                    <img
+                      src="./Images/About aytor shop card images/2.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>14.6k</h4>
+                  <p>Sellers active on shop</p>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                <div class="cards text-center">
+                  <div class="image">
+                    <img
+                      src="./Images/About aytor shop card images/3.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>75.9k</h4>
+                  <p>Customer active on store</p>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                <div class="cards text-center">
+                  <div class="image">
+                    <img
+                      src="./Images/About aytor shop card images/4.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>35.5k</h4>
+                  <p>Annual gross sales</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *LEARN ABOUT AYTOR SHOP END -->
+
+      <!-- *OUR STORY SECTION -->
+      <section id="promo" class="ourStory">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contains col-lg-10">
+                <h3>Our Story</h3>
+                <p>
+                  Synergistically pontificate focused services whereas intuitive
+                  leadership. Competently predominate ubiquitous services rather
+                  than client-centric scenarios. Distinctively mesh B2C benefits
+                  for superior customer service. Interactively e-enable
+                  inexpensive total linkage without quality materials.
+                  Phosfluorescently negotiate.
+                </p>
+                <p class="mt-3">
+                  Professionally exploit user-centric technology for seamless
+                  solutions. Objectively morph unique strategic theme areas
+                  without cross functional mindshare. Synergistically aggregate
+                  adaptive functionalities rather than enterprise-wide
+                  experiences. Completely maintain.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="promoVideo">
+                <div class="overlay">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                </div>
+                <img
+                  class="d-block w-100"
+                  src="./Images/Promo Image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-lg-3">
+              <div class="ourStoryCard">
+                <div class="row align-items-center">
+                  <div class="col-lg-4 text-center text-lg-end">
+                    <img
+                      src="./Images/Shopping Benefits Images/01.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-8 text-center">
+                    <h4>FREE SHIPPING</h4>
+                    <p class="d-none d-lg-block">
+                      all orders over <span>$150</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-3">
+              <div class="ourStoryCard">
+                <div class="row align-items-center">
+                  <div class="col-lg-4 text-center text-lg-end">
+                    <img
+                      src="./Images/Shopping Benefits Images/02.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-8 text-center">
+                    <h4>QUICK PAYMENT</h4>
+                    <p class="d-none d-lg-block">100% secure payment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-3">
+              <div class="ourStoryCard">
+                <div class="row align-items-center">
+                  <div class="col-lg-4 text-center text-lg-end">
+                    <img
+                      src="./Images/Shopping Benefits Images/03.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-8 text-center">
+                    <h4>FREE RETURNS</h4>
+                    <p class="para d-none d-lg-block">
+                      Return money within 30 days
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-3">
+              <div class="ourStoryCard border-0">
+                <div class="row align-items-center">
+                  <div class="col-lg-4 text-center text-lg-end">
+                    <img
+                      src="./Images/Shopping Benefits Images/04.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-8 text-center">
+                    <h4>24/7 SUPPORT</h4>
+                    <p class="d-none d-lg-block">Quick Support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *OUR STORY SECTION EDN -->
+
+      <!-- *LEADERSHIP EXPERT TEAM -->
+      <section id="leadership">
+        <div class="container">
+          <h2>Leadership Expert Team</h2>
+
+          <div class="leadershipSlider">
+            <div class="col-lg-3 me-4 text-center">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/Leadership Images/1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="details">
+                  <h4>Michel Richard</h4>
+                  <p>Founder</p>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 me-4 text-center">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/Leadership Images/2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="details">
+                  <h4>Imon Hossain</h4>
+                  <p>Founder</p>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 me-4 text-center">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/Leadership Images/3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="details">
+                  <h4>Sudjida Lufz</h4>
+                  <p>Founder</p>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 me-4 text-center">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/Leadership Images/4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="details">
+                  <h4>Henry Josep</h4>
+                  <p>Founder</p>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 me-4 text-center">
+              <div class="slide">
+                <div class="image">
+                  <img
+                    class="d-block w-100"
+                    src="./Images/Leadership Images/3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="details">
+                  <h4>Sudjida Lufz</h4>
+                  <p>Founder</p>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *LEADERSHIP EXPERT TEAM END -->
+
+      <!-- *CUSTOMER START -->
+      <section id="customer">
+        <div class="container">
+          <div class="customerSlider d-flex justify-content-center">
+            <div class="slide col-lg-6 text-center">
+              <img
+                class="d-block mx-auto"
+                src="./Images/Customer/Customer 1.png"
+                alt=""
+              />
+              <p>
+                Distinctively revolutionize functional sources rather than
+                cutting-edge interfaces. Appropriately productize
+                next-generation infomediaries without interoperable e-business.
+                Progressively empower.
+              </p>
+              <h4>Alexzender Markos</h4>
+              <span>Customer</span>
+            </div>
+
+            <div class="slide col-lg-6 text-center">
+              <img
+                class="d-block mx-auto"
+                src="./Images/Customer/Customer 2.png"
+                alt=""
+              />
+              <p>
+                Distinctively revolutionize functional sources rather than
+                cutting-edge interfaces. Appropriately productize
+                next-generation infomediaries without interoperable e-business.
+                Progressively empower.
+              </p>
+              <h4>Alexzender Markos</h4>
+              <span>Customer</span>
+            </div>
+
+            <div class="slide col-lg-6 text-center">
+              <img
+                class="d-block mx-auto"
+                src="./Images/Customer/Customer 3.png"
+                alt=""
+              />
+              <p>
+                Distinctively revolutionize functional sources rather than
+                cutting-edge interfaces. Appropriately productize
+                next-generation infomediaries without interoperable e-business.
+                Progressively empower.
+              </p>
+              <h4>Alexzender Markos</h4>
+              <span>Customer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *CUSTOMER END -->
+
+      <!-- *AYTOR INSTAGRAM -->
+      <section id="aytorInstagram">
+        <div class="container">
+          <h2 class="text-center">@Aytor Instagram</h2>
+
+          <div class="instagramSlider">
+            <div class="slide mx-2">
+              <img
+                class="d-block w-100"
+                src="./Images/Aytor Instagram/01.png"
+                alt=""
+              />
+              <div class="overlay">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+
+            <div class="slide mx-2">
+              <img
+                class="d-block w-100"
+                src="./Images/Aytor Instagram/02.png"
+                alt=""
+              />
+              <div class="overlay">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+
+            <div class="slide mx-2">
+              <img
+                class="d-block w-100"
+                src="./Images/Aytor Instagram/03.png"
+                alt=""
+              />
+              <div class="overlay">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+
+            <div class="slide mx-2">
+              <img
+                class="d-block w-100"
+                src="./Images/Aytor Instagram/04.png"
+                alt=""
+              />
+              <div class="overlay">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+
+            <div class="slide mx-2">
+              <img
+                class="d-block w-100"
+                src="./Images/Aytor Instagram/05.png"
+                alt=""
+              />
+              <div class="overlay">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+
+            <div class="slide mx-2">
+              <img
+                class="d-block w-100"
+                src="./Images/Aytor Instagram/06.png"
+                alt=""
+              />
+              <div class="overlay">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+
+            <div class="slide mx-2">
+              <img
+                class="d-block w-100"
+                src="./Images/Aytor Instagram/04.png"
+                alt=""
+              />
+              <div class="overlay">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *AYTOR INSTAGRAM END -->
+    </main>
+
+    <!-- *FOOTER START -->
+    <footer>
+      <div class="container">
+
+        <div class="subscribe">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Subscribe to Our Newsletter!</h3>
+              <p class="col-lg-8">Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
+            </div>
+            <div class="col-lg-6 py-4">
+              <form class="d-flex">
+                <input class="col-8" type="text" placeholder="Enter your email....">
+                <button class="col-4" >Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="socialLinks">
+              <img src="./Images/Footer Logo.png" alt="" />
+              <p>
+                Progressively optimize effective ideas before turnkey process
+                improvements. Proactively disseminate
+              </p>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="accounts">
+              <h4>My Account</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span> My
+                    Account</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    View Cart</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Wishlist</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Compare</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span> New
+                    Products</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="accounts">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Help</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    View Cart</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Customer Service</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Store Locations</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="opening">
+              <h4>Opening Time</h4>
+              <div class="row">
+                <div class="col-6">
+                  <p><span>Mon-Tue:</span></p>
+                  <p><span>Wed:</span></p>
+                  <p><span>Fri:</span></p>
+                  <p><span>Sat:</span></p>
+                  <p><span>Sun:</span></p>
+                </div>
+                <div class="col-6">
+                  <p class="time">8AM - 10PM</p>
+                  <p class="time">8AM - 7PM</p>
+                  <p class="time">7AM - 12PM</p>
+                  <p class="time">9AM - 8PM</p>
+                  <p class="time">Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="contact">
+              <h4>Contact Us</h4>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"
+                    ><i class="fa-solid fa-location-dot"></i
+                  ></span>
+                </div>
+                <div class="col-11">
+                  <address class="text">
+                    830 Broad way, New York, NY 10003, United States
+                  </address>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="tel:+18008660286">+18008660286</a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="mailto:aetor.info@gmail.com"
+                    >aetor.info@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-globe"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="#">info@aetor.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="last">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+              <p class="flast">
+                © 2022 All Rights Reserved <span>Aytor</span> By
+                <span>Angfuzsoft.</span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="./Images/Paying method.png" alt="" />
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- *FOOTER END -->
+
+    <!-- *JS -->
+    <!-- *JQUERY-->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- *SLICK -->
+    <script src="./js/slick.min.js"></script>
+
+    <!-- *FINAL COUNTDOWN JS -->
+    <script src="./js/jquery.countdown.min.js"></script>
+
+    <!-- *BOOTSTRAP-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- *MAIN-->
+    <script src="./js/app.js"></script>
+    <!-- *JS END -->
+  </body>
+</html>

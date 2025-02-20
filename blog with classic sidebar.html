@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aytor</title>
+    <!-- *CSS -->
+    <!-- *FAVICON -->
+    <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
+
+    <!-- *FONT AWESOME -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- *BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- *SLICK -->
+    <link rel="stylesheet" href="./css/slick.css" />
+
+    <!-- *MAIN -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- *RESPONSIVE -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- *CSS END -->
+  </head>
+  <body>
+    <!-- *NAVBAR -->
+    <header>
+      <!-- *DESKTOP NAVBAR -->
+      <nav class="navbar navbar-expand-lg d-none d-lg-block">
+        <div class="container">
+          <!-- *LOGO -->
+          <a class="navbar-brand" href="#">
+            <img src="./Images/Logo.png" alt="" />
+          </a>
+          <!-- *LOGO END -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse desktopMenu"
+            id="navbarSupportedContent"
+          >
+            <!-- *DESKTOP MENU -->
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Shop <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./shop grid.html">Shop - Grid</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./shop details.html">Shop - Details Style One</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Pages <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./about.html">About Us</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./compare.html">Compare</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./wishlist.html">Wishlist</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Features</a>
+              </li>
+
+              <li class="nav-item">
+                <a data-bs-toggle="dropdown" aria-expanded="false" class="nav-link" aria-current="page" href="#"
+                  >Blogs <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <div class="dropdown">
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item submenuItem" href="./blog with classic sidebar.html">Blog - Classic With Sidebar</a></li>
+                    <li><a class="dropdown-item submenuItem" href="./blog details.html">Blog - Details</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- *DESKTOP MENU END -->
+          </div>
+
+          <!-- *ICONS -->
+          <div class="icons">
+            <ul class="d-flex">
+              <li>
+                <a href="#" class="searchIcon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="./wishlist.html"
+                  ><i class="fa-solid fa-bag-shopping"></i>
+                  <span class="cartCounter">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- *ICONS END -->
+        </div>
+      </nav>
+
+      <!-- *SEARCH -->
+      <section id="search">
+        <div class="container d-flex align-items-center justify-content-center">
+          <form action="" class="d-flex">
+            <input type="text" placeholder="Search Here" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="cross d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </section>
+      <!-- *SEARCH END -->
+
+      <!-- *DESKTOP NAVBAR END-->
+
+      <!-- *SMALL NAVBAR -->
+      <nav id="navbar_sm" class="d-block d-lg-none">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-2 text-center">
+              <button
+                class="menuTogglerBtn"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#smallMenu"
+              >
+                <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+            </div>
+
+            <div class="col-7 text-center">
+              <a href="#"><img src="./Images/Logo.png" height="50" alt="" /></a>
+            </div>
+
+            <div class="col-3">
+              <div class="icons">
+                <ul class="d-flex justify-content-end">
+                  <li>
+                    <a class="search_icon_sm" href="#"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-bag-shopping"></i>
+                      <span class="cartCounter">0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *OFFCANVAS MENU -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="smallMenu"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <a href="#"><img src="./Images/Logo.png" height="30" alt="" /></a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body p-0">
+            <ul class="smallMenuLinks">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- *OFFCANVAS MENU END -->
+      </nav>
+      <!-- *SMALL NAVBAR END -->
+    </header>
+    <!-- *NAVBAR END -->
+
+    <main>
+      <!-- *ABOUT BANNER START -->
+      <section id="aboutBanner">
+        <div class="container">
+          <h2>Blog - Classic With Sidebar</h2>
+          <p>
+            <a href="./index.html">Home </a> /
+            <a href="./about.html"> Blog</a>
+          </p>
+        </div>
+      </section>
+      <!-- *ABOUT BANNER END -->
+
+      <!-- *BLOG CLASSIC WITH SIDEBAR -->
+      <section id="blogContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 order-2 order-lg-1">
+
+                    <div class="blogCard mb-4">
+                        <div class="blogCardImage blogCardSlider">
+                            <div class="slide"><img class="d-block w-100" src="./Images/Blog Images/Blog 1.png" alt=""></div>
+                            <div class="slide"><img class="d-block w-100" src="./Images/Blog Images/Blog 1.png" alt=""></div>
+                            <div class="slide"><img class="d-block w-100" src="./Images/Blog Images/Blog 1.png" alt=""></div>
+                        </div>
+
+                        <div class="contains">
+                            <h5>Michel-Fashion Admin &nbsp; | &nbsp; &nbsp;<span><i class="fa-solid fa-calendar-days"></i></span> January 04, 2022</h5>
+                            <h3>Color, Size, Material Swatches</h3>
+                            <p>Seamlessly cultivate low-risk high-yield processes whereas effective platforms. Professionally restore mission-critical proces  improvements error-free results. Interactively monetize intermandated experiences through equity invested customer service. Dramatically engage user friendly paradigms via fully tested collaboration and idea-sharing. Energistically pursue wireless.</p>
+                            <a href="#">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="blogCard mb-4">
+                        <div class="blogCardImage">
+                            <img class="d-block w-100" src="./Images/Blog Images/Blog 1.png" alt="">
+                        </div>
+
+                        <div class="contains">
+                            <h5>Michel-Fashion Admin &nbsp; | &nbsp; &nbsp;<span><i class="fa-solid fa-calendar-days"></i></span> January 04, 2022</h5>
+                            <h3>Fashion coats 2022: key trends</h3>
+                            <p>Distinctively initiate performance based web services for installed base infrastructures. Credibly benchmark mission-critical potentialities before low-risk high-yield systems. Globally facilitate value-added ROI with vertical core competencies. Quickly generate 2.0 expertise via best-of-breed applications. Uniquely customize best-of-breed ROI via B2C deliverables.</p>
+                            <a href="#">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="blogCard mb-4">
+                        <div class="blogCardImage">
+                            <img class="d-block w-100" src="./Images/Blog Images/Blog 1.png" alt="">
+                        </div>
+
+                        <div class="contains">
+                            <h5>Michel-Fashion Admin &nbsp; | &nbsp; &nbsp;<span><i class="fa-solid fa-calendar-days"></i></span> January 04, 2022</h5>
+                            <h3>Minimal Design Inspiration</h3>
+                            <p>Conveniently scale 24/7 leadership skills before infrastructures. Monotonectally envisioneer market-driven customer service e-markets through multidisciplinary functionalities. Authoritatively harness transparent web services through resource- skills. Enthusiastically coordinate long-term high-impact e-markets whereas.</p>
+                            <a href="#">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="blogCard mb-4">
+                        <div class="blogCardImage">
+                            <div class="playBtn"><a href="#"><i class="fa-solid fa-play"></i></a></div>
+                            <img class="d-block w-100" src="./Images/Blog Images/Blog 1.png" alt="">
+                        </div>
+
+                        <div class="contains">
+                            <h5>Michel-Fashion Admin &nbsp; | &nbsp; &nbsp;<span><i class="fa-solid fa-calendar-days"></i></span> January 04, 2022</h5>
+                            <h3>Fashion T-shirt 2022: key trends</h3>
+                            <p>Quickly expedite cross-platform supply chains with high standards in platforms. Appropriately deliver 24/7 internal "organic" sou rces through cooperative leadership. Completely aggregate high-quality vortals and superior ideas. Synergistically reconc eptuali  flexible infrastructures without quality e-markets. Holisticly redefine leveraged customer service vis-a-vis.</p>
+                            <a href="#">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="blogCard mb-4">
+                        <div class="blogCardImage">
+                            <img class="d-block w-100" src="./Images/Blog Images/Blog 1.png" alt="">
+                        </div>
+
+                        <div class="contains">
+                            <h5>Michel-Fashion Admin &nbsp; | &nbsp; &nbsp;<span><i class="fa-solid fa-calendar-days"></i></span> January 04, 2022</h5>
+                            <h3>Women Fashionable Coats 2022</h3>
+                            <p>Collaboratively visualize client - based than professional experiences. Credibly benchmarknes wireless functionalities through adaptive intellectual capital. Conveniently parallel task  RIO team building resources with global total linkage. Quickly morph leading-edge e-commerce via top-line core competencies. Energistically leverage existing economically sound relationships.</p>
+                            <a href="#">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="blogCard mb-4">
+                        <div class="blogCardImage">
+                            <img class="d-block w-100" src="./Images/Blog Images/Blog 2.png" alt="">
+                        </div>
+
+                        <div class="contains">
+                            <h5>Michel-Fashion Admin &nbsp; | &nbsp; &nbsp;<span><i class="fa-solid fa-calendar-days"></i></span> January 04, 2022</h5>
+                            <h3>Fashion Women New key trends</h3>
+                            <p>Globally engage transparent web-readiness through professional mindshare. Quickly fabricate distributed e-markets before future-proof imperatives. Interactively orchestrate integrated products whereas frictionless collaboration and idea-sharing. Dynamicall  redefine enterprise e-business vis-a-vis collaborative "outside the box" thinking. Appropriately architect emerging.</p>
+                            <a href="#">Read More <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="post">Showing 6 of 16 Post</p>
+                        </div>
+                        <div class="col-6 pt-2">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination d-flex justify-content-end">
+                                  <li class="page-item"><a class="page-link" href="#"><span><i class="fa-solid fa-arrow-left-long"></i></span> Pre</a></li>
+                                  <li class="page-item mx-2"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item ms-2"><a class="page-link" href="#">Next <span><i class="fa-solid fa-arrow-right-long"></i></span></a></li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-3 order-1 order-lg-2">
+
+                    <div class="search d-flex">
+                        <input class="col-10" type="search" placeholder="Search Here....">
+                        <button class="col-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="categories py-5">
+                        <h4>Categories</h4>
+                        <div class="row categoryItem">
+                            <div class="col-10">Fashion</div>
+                            <div class="col-2 text-end">(5)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Furnitures</div>
+                            <div class="col-2 text-end">(2)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Electronics</div>
+                            <div class="col-2 text-end">(3)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Cosmetics</div>
+                            <div class="col-2 text-end">(6)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Wine</div>
+                            <div class="col-2 text-end">(2)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Frame Sunglasses</div>
+                            <div class="col-2 text-end">(2)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Jewellery</div>
+                            <div class="col-2 text-end">(4)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Accessories</div>
+                            <div class="col-2 text-end">(3)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">New Arrivals</div>
+                            <div class="col-2 text-end">(7)</div>
+                        </div>
+                        <div class="row categoryItem">
+                            <div class="col-10">Medicine</div>
+                            <div class="col-2 text-end">(5)</div>
+                        </div>
+                    </div>
+
+                    <div class="recentPost">
+                        <h4>Recent Posts</h4>
+
+                        <div class="row Posts">
+                            <div class="col-4">
+                                <img class="d-block w-100" src="./Images/Blog Images/Recent Post.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5>Fashion Women New Key Trends</h5>
+                                <p>January 04, 2022</p>
+                            </div>
+                        </div>
+                        <div class="row Posts">
+                            <div class="col-4">
+                                <img class="d-block w-100" src="./Images/Blog Images/Recent Post.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5>Fashion Women New Key Trends</h5>
+                                <p>January 04, 2022</p>
+                            </div>
+                        </div>
+                        <div class="row Posts">
+                            <div class="col-4">
+                                <img class="d-block w-100" src="./Images/Blog Images/Recent Post.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5>Fashion Women New Key Trends</h5>
+                                <p>January 04, 2022</p>
+                            </div>
+                        </div>
+                        <div class="row Posts">
+                            <div class="col-4">
+                                <img class="d-block w-100" src="./Images/Blog Images/Recent Post.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h5>Fashion Women New Key Trends</h5>
+                                <p>January 04, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tags py-5">
+                        <h4>Tags</h4>
+                        <div class="row g-2 py-4">
+                            <div class="col mx-1 tag"><p>Accessories</p></div>
+                            <div class="col mx-1 tag"><p>Fashion</p></div>
+                            <div class="col mx-1 tag"><p>Sports</p></div>
+                            <div class="col mx-1 tag"><p>Food</p></div>
+                            <div class="col mx-1 tag"><p>Furnitures</p></div>
+                            <div class="col mx-1 tag"><p>Jewellery</p></div>
+                            <div class="col mx-1 tag"><p>Mobile</p></div>
+                            <div class="col mx-1 tag"><p>Toyes</p></div>
+                            <div class="col mx-1 tag"><p>Technology</p></div>
+                            <div class="col mx-1 tag"><p>Tips</p></div>
+                        </div>
+                    </div>
+
+                    <div class="sale pb-5">
+                        <img class="d-block w-100" src="./Images/Blog Images/Sale.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- *BLOG CLASSIC WITH SIDEBAR END -->
+
+      
+    </main>
+
+    <!-- *FOOTER START -->
+    <footer>
+      <div class="container">
+
+        <div class="subscribe">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Subscribe to Our Newsletter!</h3>
+              <p class="col-lg-8">Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
+            </div>
+            <div class="col-lg-6 py-4">
+              <form class="d-flex">
+                <input class="col-8" type="text" placeholder="Enter your email....">
+                <button class="col-4" >Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="socialLinks">
+              <img src="./Images/Footer Logo.png" alt="" />
+              <p>
+                Progressively optimize effective ideas before turnkey process
+                improvements. Proactively disseminate
+              </p>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="accounts">
+              <h4>My Account</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span> My
+                    Account</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    View Cart</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Wishlist</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Compare</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span> New
+                    Products</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="accounts">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Help</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    View Cart</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Customer Service</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span><i class="fa-solid fa-chevron-right"></i> </span>
+                    Store Locations</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="opening">
+              <h4>Opening Time</h4>
+              <div class="row">
+                <div class="col-6">
+                  <p><span>Mon-Tue:</span></p>
+                  <p><span>Wed:</span></p>
+                  <p><span>Fri:</span></p>
+                  <p><span>Sat:</span></p>
+                  <p><span>Sun:</span></p>
+                </div>
+                <div class="col-6">
+                  <p class="time">8AM - 10PM</p>
+                  <p class="time">8AM - 7PM</p>
+                  <p class="time">7AM - 12PM</p>
+                  <p class="time">9AM - 8PM</p>
+                  <p class="time">Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="contact">
+              <h4>Contact Us</h4>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"
+                    ><i class="fa-solid fa-location-dot"></i
+                  ></span>
+                </div>
+                <div class="col-11">
+                  <address class="text">
+                    830 Broad way, New York, NY 10003, United States
+                  </address>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="tel:+18008660286">+18008660286</a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="mailto:aetor.info@gmail.com"
+                    >aetor.info@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 text-center">
+                  <span class="icon"><i class="fa-solid fa-globe"></i></span>
+                </div>
+                <div class="col-11">
+                  <a class="text" href="#">info@aetor.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="last">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+              <p class="flast">
+                © 2022 All Rights Reserved <span>Aytor</span> By
+                <span>Angfuzsoft.</span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="./Images/Paying method.png" alt="" />
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- *FOOTER END -->
+
+    <!-- *JS -->
+    <!-- *JQUERY-->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- *SLICK -->
+    <script src="./js/slick.min.js"></script>
+
+    <!-- *FINAL COUNTDOWN JS -->
+    <script src="./js/jquery.countdown.min.js"></script>
+
+    <!-- *BOOTSTRAP-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- *MAIN-->
+    <script src="./js/app.js"></script>
+    <!-- *JS END -->
+  </body>
+</html>
